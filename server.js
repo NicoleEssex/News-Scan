@@ -29,7 +29,7 @@ app.set('view engine', 'handlebars'); //sets express view engine to handlebars
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to the Mongo DB
-// mongoose.Promise = Promise;
+mongoose.Promise = Promise;
 if(process.env.MONGODB_URI){
     mongoose.connect(process.env.MONGODB_URI)
 }
